@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*...................................................
+.....................................................
+...................................................*/
+body {
+  font-family:Arial;
+  background-color: #EEE8AA;
+}
+
+/*start navbar*/
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #fff556;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+
+/*end navbar*/
+
+content{
+  font-family: Segoe Print;
+}
+
+/*start paper design*/
+.paper {
+  background: #fafafa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 75px;
+  max-width: 550px;
+  min-width: 550px;
+  height: 670px;
+  padding: 24px;
+  position: relative;
+  width: 80%;
+  float: left;
+
+}
+
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0px; left: 0;
+    width: 50px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper_content {
+    position: absolute;
+    top: 30px; right: 0; bottom: 30px; left: 60px;
+}
+
+.paper_content p{
+    font-size: 18px;
+    padding: 3px;
+    line-height: 25px;
+}
+
+.paper_content a{
+    font-size: 20px;
+    padding: 3px;
+    line-height: 27px;
+    text-decoration: none;
+    color: black;
+}
+
+.paper_content .discuri{
+  list-style-type: disc;
+}
+
+.paper_content .cercuri{
+  list-style-type: circle;
+  
+}
+
+.paper_content .literemici{
+  list-style-type: lower-latin;
+  
+}
+
+.paper_content .numere{
+  list-style-type: decimal;
+}
+
+.paper_content .romane{
+  list-style-type: upper-roman;
+}
+
+
+li{
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+ul{
+  margin-left: 30px;
+  line-height: 25px;
+}
+
+b{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+h2{
+  font-size: 35px;
+}
+
+h3{
+  font-size: 23px;
+}
+i{
+  font-style: italic;
+}
+
+.upink{
+  text-decoration: underline;
+    text-decoration-color: pink;
+}
+
+.ugreen{
+  text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.ublue{
+  text-decoration: underline;
+    text-decoration-color: blue; 
+}
+
+.ured{
+   text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.uorange{
+  text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.uyellow{
+  text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.uviolet{
+  text-decoration: underline;
+    text-decoration-color: violet;
+}
+
+.sppink{
+  border-radius: 3px;
+  background-color: pink;
+}
+
+.spviolet{
+  border-radius: 3px;
+  background-color: violet;
+}
+
+.spred{
+  border-radius: 3px;
+  background-color: tomato;
+}
+
+.spgreen{
+  background-color:lightgreen;
+  border-radius: 3px;
+}
+
+.spblue{
+  background-color: lightblue;
+  border-radius: 3px;
+}
+
+.sporange{
+  background-color: orange;
+  border-radius: 3px;
+}
+
+.spyellow{
+  background-color: yellow;
+  border-radius: 3px;
+}
+
+/*end paper design*/
+
+/*start sticky notes*/
+
+.sticky_note{
+  padding: 3em;
+}
+.sticky_note a{
+  text-decoration: none;
+  color :#000;
+  background: #ffffb3;
+  display: block;
+  height: 14em;
+  width: 16em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ 
+}
+
+.sticky_note_content{
+  margin: 2em;
+  float: left;
+}
+
+.sticky_note_content a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+}
+
+.sticky_note_content a:hover,ul li a:focus{
+  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  position: relative;
+  z-index: 5;
+}
+
+.sticky_note_content p{
+  font-size: 18px;
+  line-height: 21.5px;
+}
+
+/*end sticky notes*/
+
+/*buton sus start*/
+#upbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#upbtn:hover {
+  background-color: darkorange;
+}
+/*buton sus end*/
+
+
+sub{ 
+  vertical-align: sub;
+  font-size: 12px;
+ }
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/biologie.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" class="active">Acasă</a>
+		<a href="materiale.html">Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+	</div>
+	<!--end topnav-->
+</heder>
+
+<content>
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">Clasa a IX-a</h1>
+
+ 	<!-- cuprins -->
+
+	<div class="paper">
+		<div class="paper_content">
+	  		<h2 style="font-size: 30px;">&ensp;&ensp;&ensp;<u>Cuprins</u></h2>
+	  		<br><br>
+	  		<ol class="romane">
+	  			<li><a href="biologie10_1.html"><u>Ţesuturi vegetale şi animale</u></a></li>
+	  				<ul class="numere">
+	  					<li><a href="biologie10_1.html">Ţesuturi vegetale</a></li>
+	  					<li><a href="biologie10_1.html#tesuturi_animale">Ţesuturi animale</a></li>
+	  				</ul>
+	  			<li><a href="biologie10_2.html"><u>Structura şi funcţiile fundamentale ale organismelor vii</u></a></li>
+	  				<ul class="numere" style="margin-left: 30px;">
+	  					<li><a href="biologie10_2.html#functii_de_nutritie">Funcţii de nutriţie</a></li>
+	  						<ul class="discuri" style="margin-left: 30px;">
+	  							<li><a href="biologie10_2.html#functii_de_nutritie">Nutriţia autotrofă</a></li>
+	  							<li><a href="biologie10_2.html#nutritia_heterotrofa">Nutriţia heterotrofă</a></li>
+	  							<li><a href="biologie10_2.html#respiratia">Respiraţia</a></li>
+	  							<li><a href="biologie10_2.html#circulatia">Circulaţia</a></li>
+	  							<li><a href="biologie10_2.html#excretia">Excreţia</a></li>
+	  						</ul>
+	  					<li><a href="biologie10_2.html#functii_de_relatie">Funcţii de relaţie</a></li>
+	  						<ul class="discuri" style="margin-left: 30px;">
+	  							<li><a href="biologie10_2.html#functii_de_relatie">Sensibilitatea</a></li>
+	  							<li><a href="biologie10_2.html#locomotia_la_animale">Locomoţia la animale</a></li>
+	  						</ul>
+	  					<li><a href="biologie10_2.html#functia_de_reproducere">Funcţia de reproducere</a></li>
+	  						<ul class="discuri" style="margin-left: 30px;">
+	  							<li><a href="biologie10_2.html#functia_de_reproducere">Reproducerea la plante</a></li>
+	  							<li><a href="biologie10_2.html#reproducerea_la_animale">Reproducerea la animale</a></li>
+	  						</ul>
+	  				</ul>
+	  			
+	  		</ol>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+//navbar end
+
+
+//buton sus start
+//Get the button
+	var upbutton = document.getElementById("upbtn");
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+</script>
+
+</body>
+</html>

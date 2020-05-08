@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/biologie.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html" >Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+	    </ol>
+	</div>
+	<!--end topnav-->
+</heder>
+
+
+
+
+<content>
+
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+
+	<!-- I -->
+	<div class="paper">
+		<div class="paper_content">
+	  		<h1><u>I. Alcătuirea corpului uman</u></h1>
+	  		<br><br>
+	  		<h3>I.1. Tipografia organelor si a sistemelor de organe</h3>
+	  		<br><br>
+	  		<p>În corpul omenesc celulele și țesuturile alcatuiesc:
+	  			<ul class="discuri">
+	  				<li>organe: grupări de celule și țesuturi care îndeplinesc anumite funcții;</li>
+	  				<li>sisieme de organe: unități morfologice care îndeplinesc principalele funcții ale organismului: de relație, de nutriție și de reproducere;</li>
+	  			</ul>
+	  		</p>
+	  		<p><b>Segmentele corpului uman </b>sunt:
+	  			<ul class="discuri">
+	  				<li>capul: conține neurocraniu, viscerocraniu;</li>
+	  				<li>gâtul: prezintă regiunea posterioară (ceafa) și regiunea anterioară (gâtul propriu-zis);</li>
+	  				<li>trunchiul: format din torace, abdomen și pelvis;</li>
+	  				<li>membrele:
+	  					<ul class="cercuri">
+	  						<li>superioare- centura scapulară (leagă membrele superioare de trunchi)</li>
+	  						<li>porțiunea liberă- formată din braț, antebraț, mână</li>
+	  						<li>inferioare- centura pelviană</li>
+	  						<li>porțiunea liberă- formată din coapsă, gambă, picior.</li>
+	  					</ul>
+	  				</li>
+	  			</ul>
+	  		</p>
+	  
+		</div>
+	</div>
+	<br>
+
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: orange;">
+	      <a >
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p>În Evul Mediu biserica interzicea autopsiile, de aceea studierea construcției (anatomiei) corpului uman era dificilă. Anatomiștii însă cutezau să facă autopsii, cu riscul propriilor vieți furând cadavrele din cimitire.</p>
+	      </a>
+	    </div>
+    </div>
+
+
+	<div class="paper">
+		<div class="paper_content">
+	  		<h3>I.2. Planuri si raporturi anatomice ale corpului uman</h3>
+	  		<br><br>
+	  		<p>Corpul uman este tridimensional, are simetrie bilaterală și este străbatut de trei axe și trei planuri.</p>
+	  		<p><b>A. Axele</b>- se întretaie în unghi drept și corespund dimensiunilor spațiului. Acestea sunt:
+	  			<ul class="discuri">
+	  				<li>axul longitudinal este axul lungimii; are doi poli: superior (cranial) și inferior (caudal)</li>
+	  				<li>axul sagital este axul grosimii corpului (anteroposterior); are doi poli: anterior și posterior</li>
+	  				<li>axul transversal este axul lățimii corpului (orizontal); are doi poli: stâng și drept.</li>
+	  			</ul>
+	  		</p>
+	  		<p><b>B. Planurile</b> corpului uman trec prin câte două axe.
+	  			<ul class="discuri">
+	  				<li>planul sigital:</li>
+	  					<ul class="cercuri" style="margin-left: 30px;">
+							<li>este perpendicular pe planul frontal;</li>
+							<li>trece prin axul longitudinal și sagital;</li>
+							<li>este planul simetriei bilaterale;</li>
+							<li>împarte corpul în două jumătăți simetrice, dreapta și stânga.</li>
+						</ul>
+	  			</ul>
+	  		</p>
+		</div>
+	</div>
+
+	<div class="paper">
+		<div class="paper_content">
+			<p>
+	 			<ul class="discuri">
+	  				<li>planul transversal:</li>
+	  					<ul class="cercuri" style="margin-left: 30px;">
+	  						<li>este perpendicular pe planul frontal și sagital;</li>
+	  						<li>trece prin axul sigital și transversal;</li>
+	  						<li>este planul metameriei corpuluiș</li>
+	  					</ul>
+
+	  				<li>planul frontal</li>
+	  					<ul class="cercuri" style="margin-left: 30px;">
+	  						<li>vertical, merge paralel cu fruntea;</li>
+	  						<li>trece prin axul longitudinal și prin cel transversal;</li>
+	  						<li>împarte corpul în două părți asimetrice: anterioară (ventrală) și posterioară (dorsală)</li>
+	  					</ul>
+	  			</ul>
+	  			
+	  		</p>
+		</div>
+	</div>
+	
+
+
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	//navbar end
+
+	//buton sus start
+	//Get the button
+	var upbutton = document.getElementById("upbtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+</script>
+
+
+
+</body>
+</html>

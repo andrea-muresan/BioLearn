@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/biologie.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html" >Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+	    </ol>
+	</div>
+	<!--end topnav-->
+</heder>
+
+
+
+
+<content>
+
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">II. Celula 
+ </h1>
+
+	<!--notiuni introductive-->
+
+	<div class="paper">
+		<div class="paper_content">
+			<h2>&ensp;&ensp;Noțiuni introductive</h2>
+			<br><br>
+			<p><b style="color: red;">celula</b> =  unitatea structurală și funcțională a lumii vii.</p>
+			<p><b style="color: red;">citologia</b> =  știința care studiază morfologia, anatomia și fiziologia celulei.</p>
+			<br><br>
+			<img alt="Oroare" src="../Imagini_materiale/schema_celula.png" width="450" >
+			<p><b><span class="spviolet">Forma celulelor:</span></b>
+				<ul class="discuri">
+					<li>Sferice</li>
+					<li>Ovale</li>
+					<li>Cubice</li>
+					<li>Cilindrice</li>
+					<li>Prismatice</li>
+					<li>Stelate</li>
+				</ul>
+			</p>
+			<p><b><span class="spviolet">Dimensiunea celulelor</span></b> este de ordinul micronilor: 10-100μm;
+				
+			</p>
+		</div>
+	</div>
+
+	<!-- stiai ca -->
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: orange;">
+	      <a>
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p>Celulele sunt atât de mici, încât pot fi văzute doar la microscop. Chiar și cea mai mare celulă a organismului uman -ovulul feminin- are diametru de doar un sfert de milimetru. </p>
+	      </a>
+	    </div>
+    </div>
+
+	<!-- celula procariota -->
+ 
+
+	<div class="paper">
+		<div class="paper_content">
+			<h2 id="celula_procariota">&ensp;&ensp;Celula procariotă</h2>
+
+			<br><br>
+			<p ><h3  ><span class="sppink">Structură:</span></h3>
+				<br>
+				<ul class="numere">
+					<li><u class="upink">PERETE CELULAR</u></li>
+						<ul class="discuri">
+							<li>lipoproteic;</li>
+							<li>rigid;</li>
+							<li>conține MUREINĂ;</li>
+							<li>acoperit de o teacă gelatinoasă polizaharidică = GLICOCALIX;</li>
+						</ul>
+					<li><u class="upink">MEMBRANĂ CELULARĂ</u></li>
+						<ul class="discuri">
+							<li>lipoproteică;</li>
+							<li>are învaginări = MEZOZOMI cu rol în respitația celulară și legarea cromozomului;</li>
+							<li>permite schimburile cu mediul.</li>
+						</ul>
+					<li><u class="upink">CITOPLASMĂ - conține doar ribozomi.</u></li>
+					<li><u style="text-decoration-color: pink">NUCLEOID</u></li>
+						<ul class="discuri">
+							<li>nu are: membrană nucleară și nucleoli.</li>
+							<li>reprezentat de o moleculă de ADN circular: cromozom bacterian.</li>
+						</ul>
+				</ul>
+
+			</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<img alt="Oroare" src="../Imagini_materiale/celula_procariota.png" width="450" style="margin-left: 40px;" >
+			<br><br><br>
+			<img alt="Oroare" src="../Imagini_materiale/celula_procariota2.png" width="390" style="margin-left: 40px;" >
+		</div>
+	</div>
+
+
+
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<h2 id="celula_eucariota">&ensp;&ensp;Celula eucacariotă</h2>
+			<br><br>
+			<p><b><span class="spblue">Alcătuire:</span></b>
+				<ul class="romane">
+					<li><u class="ublue">  Învelișuri celulare</u></li>
+						<ul class="literemici">
+							<li>Perete celular;</li>
+							<li>Membrană celulară;</li>
+						</ul>
+					<li><u class="ublue">  Citoplasmă;</u></li>
+					<li><u class="ublue">  Nuclu.</u></li>
+				</ul>
+			</p>
+			<br><br>
+			<img alt="Oroare" src="../Imagini_materiale/celula_eucariota.png" width="450" style="margin-left: 40px;" >
+		</div>
+	</div>
+
+
+
+	<!-- stiai ca -->
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: green;">
+	      <a  style="background-color: #9AFF87;">
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p>Există niște celule (celule stem) care au capacitatea de a se transforma în orice tip de celule, fie ele nervoase, hepatice sau de orice alt tip. </p>
+	      </a>
+	    </div>
+    </div>
+
+	<!-- perete celular si membrana -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><u><span class="spblue"> I. Învelișurile celulei</span></u>
+				<ul class="literemici">
+					<li><u class="ublue">Peretele celular:</u></li>
+						<ul class="discuri">
+							<li>înveliș extern la:</li>
+								<ul class="cercuri">
+									<li>alge -> conține celuloză;</li>
+									<li>plante -> conține celuloză;</li>
+									<li>ciuperci -> conține LIGNINĂ.</li>
+								</ul>
+							<li>ROL:</li>
+								<ul class="cercuri">
+									<li>asigură individualitate și solidaritare;</li>
+									<li>oferă duritate și rezistență;</li>
+									<li>dă formă celulei.</li>
+								</ul>
+							
+						</ul>
+					<li><u class="ublue">Membrană celulară</u></li>
+						<ul class="discuri">
+							<li>ROL:</li>
+								<ul class="cercuri">
+									<li>delimitează celula;</li>
+									<li>dă formă celulei;</li>
+									<li>protector;</li>
+									<li>asigură schimbul de materie și energie dintre celule.</li>
+								</ul>
+							<li>prin învaginare asigură:</li>
+								<ul class="cercuri">
+									<li>compartimentarea interiorului celular;</li>
+									<li>delimitarea organitelor celulare.</li>
+								</ul>
+							<li>structură:</li>
+								<ul class="cercuri">
+									<li>trilaminară;</li>
+									<li>fosfolipidică;</li>
+									<li>aspect de mozaic fluid: fosfolipide (strat extern și intern), proteine (globuloase și transmembranare).</li>
+								</ul>
+						</ul>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+	
+
+	<div class="paper">
+		<div class="paper_content">
+			<img alt="Oroare" src="../Imagini_materiale/membrana_celulara.png" width="480" style="margin-left: 40px;" >
+			<br><br>
+			<p><u><span class="spgreen">II. Citoplasma are:</span></u>
+				<ul class="discuri">
+					<li>o parte nestructurată = HIALOPLASMĂ (matrice + citoplasmă fundamentală = CITOSOL);</li>
+					<li>o parte structurată:</li>
+						<ul class="cercuri">
+							<li>organite celulare;</li>
+							<li>incluziuni citoplasmatice.</li>
+						</ul>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- stiai ca -->
+
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: purple;">
+	      <a  style="background-color: pink;">
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p> Corpul unei persoane adulte este alcătuit din 7.000.000.000.000.000. 000.000.000.000 de atomi. </p>
+	      </a>
+	    </div>
+    </div>
+
+
+	<!-- organite celulare -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p>
+				<b><span class="spgreen">Organite celulare:</span></b>
+			</p>
+			<p><u class="ugreen">a. Ribozomii (granulele lui Palade)</u>
+				<ul class="discuri">
+					<li>nu au membrană;</li>
+					<li>pot fi liberi sau atașați membranei reticulului endoplasmatic.</li>
+					<li>structură:</li>
+						<ul class="cercuri">
+							<li>ARN;</li>
+							<li>proteine.</li>
+						</ul>
+					<li>ROL: sinteza proteinelor.</li>
+				</ul>
+			</p>
+			<br>
+			<p><u class="ugreen">b. Reticulul endoplasmatic</u>
+				<ul class="discuri">
+					<li>structură:</li>
+						<ul class="cercuri">
+							<li>vezicule puternic aplatizate = CISTERNE;</li>
+							<li>rețea de tuburi.</li>
+						</ul>
+					<li>poate fi:</li>
+						<ul class="cercuri">
+							<li>neted (REN) -> sinteza de lipide, degradarea substanțelor nocive, transport;</li>
+							<li>rugos (granular; REG) -> sinteza de proteine.</li>
+						</ul>
+				</ul>
+			</p>
+			<img alt="Oroare" src="../Imagini_materiale/reticul.png" width="310" style="margin-left: 120px;" >
+
+		</div>
+	</div>
+
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><u class="ugreen">c. Aparatul Golgi</u>
+				<ul class="discuri">
+					<li>alcătuire: vezicule aplatizate (cisterne) cu dilatații la capete =vezicule;</li>
+					<li>localizare: în apropierea nucleului;</li>
+					<li>ROL:</li>
+						<ul class="cercuri">
+							<li>biosinteza polizaharidelor;</li>
+							<li>sinteza de membrane;</li>
+							<li>producerea de secreții.</li>
+						</ul>
+				</ul>
+			</p>
+			<br>
+			<img alt="Oroare" src="../Imagini_materiale/aparat_golgi.png" width="400" style="margin-left: 40px;" >
+		</div>
+	</div>
+
+	<!-- mitocondriile -->
+	
+	<div class="paper">
+		<div class="paper_content">
+			<p><u class="ugreen">d. Mitocondriile</u>
+				<ul class="discuri">
+					<li>alcătuire:</li>
+						<ul class="cercuri">
+							<li>ÎNVELIȘ MITOCONDRIAL: membrană externă și membrană internă, pliată(-> cute = CRISTALE);</li>
+							<li>MATRIX MITOCONDRIAL cu: enzime oxido-reducătoare și aparat genetic propriu (ADN + ARN + ribozomi + enzime);</li>
+						</ul>
+					<li>ROL:</li>
+						<ul class="cercuri">
+							<li>biosinteza polizaharidelor;</li>
+							<li>sinteza de membrane;</li>
+							<li>producerea de secreții.</li>
+						</ul>
+				</ul>
+			</p>
+			<br>
+			<img alt="Oroare" src="../Imagini_materiale/mitocondrie.png" width="400" style="margin-left: 40px;" >
+		</div>
+	</div>
+
+
+
+	<!-- stiai ca -->
+
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: purple;">
+	      <a style="background-color: violet;">
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p> Celulele care compun creierul uman pot absorbi de până la de 5 ori mai multă informație decât cuprinde toată Enciclopedia Britanică. </p>
+	      </a>
+	    </div>
+    </div>
+
+	<!-- lizozomii -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><u class="ugreen">e. Lizozomii</u>
+				<ul class="discuri">
+					<li>vezicule determinate de o membrană simplă;</li>
+					<li>conțin enzime digestive =hidrolaze;</li>
+					<li>ROL:</li>
+						<ul class="cercuri">
+							<li>nutriție - prin fagocitoză;</li>
+							<li>imunitate.</li>
+						</ul>
+				</ul>
+			</p>
+			<p><u class="ugreen">f. Centrozomul</u>
+				<ul class="discuri">
+					<li>organit caracteristic celulei animale;</li>
+					<li>structură:</li>
+						<ul class="cercuri">
+							<li>2 corpusculi perpendiculari = CENTRIOLI;</li>
+							<li>masă plasmatică densă = CENTROSFERĂ;</li>
+						</ul>
+					<li>ROL: formarea formarea fusului de diviziune.</li>
+				</ul>
+			</p>
+			<p><u class="ugreen">g. Vacuolele</u>
+				<ul class="discuri">
+					<li>vezicule delimitate de o membrană simplă = TONOPLAST;</li>
+					<li>ROL: depozitarea apei, a unor ioni, a substanțelor organice.</li>
+				</ul>
+			</p>
+			<p><u class="ugreen">h. Plastidele</u>
+				<ul class="discuri">
+					<li>organite specifice algelor și plantelor.</li>
+					<li>clasificare:</li>
+					<ul class="cercuri">
+							<li>LEUCOPLASTE - nu au pigmenți și au rol în depozitarea substanțelor de rezervă;</li>
+							<li>CROMOPLASTE - plastide colorate, se găsesc în petale și fructe;</li>
+							<li>CLOROPLASTE - conțin clorofilă și au rol în fotosinteză.</li>
+					</ul>
+				</ul>
+			</p>
+
+		</div>
+	</div> 
+
+
+
+	<!-- nucleul -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><u><span class="spyellow">III. Nucleul</span></u>
+				<ul class="discuri">
+					<li>ROL:</li>
+						<ul class="cercuri">
+							<li>conține informația genetică a celulei;</li>
+							<li>asigură transmiterea caracterelor ereditare;</li>
+						</ul>
+					<li>structură:</li>
+						<ul class="cercuri">
+							<li>înveliș nuclear: membrană externă (cu pori și ribozomi) și membrană internă;</li>
+							<li>nucleoplasma (carioplasma) =  substanța fundamentală ce conține: 1-2 nucleoli și cromonemata.</li>
+						</ul>
+				</ul>
+			</p>
+			<br>
+			<img alt="Oroare" src="../Imagini_materiale/nucleul.png" width="400" style="margin-left: 40px;" >
+		</div>
+	</div>
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><u class="uyellow">CROMONEMATA:</u>
+				<ul class="discuri">
+					<li>alcătuită din ADN și proteine;</li>
+					<li>formează fibrele de cromatină;</li>
+					<li> o fibră de cromatină = un cromozom puternic despiralizat.</li>
+				</ul>
+			</p>
+			<p><u class="uyellow">Nucleolii:</u>
+				<ul class="discuri">
+					<li>alcătuiți din ADN,ARN, proteine, ribozomi;</li>
+					<li>ROL: biogeneza ribozomilor;</li>
+				</ul>
+			</p>
+			<p><u class="uyellow">Acizii nucleici:</u>
+				<ul class="discuri">
+					<li>ADN = acid dezoxiribonucleic;</li>
+					<li>ARN = acid ribonucleic;</li>
+					<li> alcătuiți din nucleotide.</li>
+				</ul>
+			</p>
+			<p> O <u class="uyellow">nucleotidă</u> conține:
+				<ul class="discuri">
+					<li>bază azotată;</li>
+						<ul class="cercuri">
+							<li>purinică: adenina (A) și guanina (G);</li>
+							<li>pirimidinică: timina (T), citozina (C), uracil (U).</li>
+						</ul>
+					<li>un zahăr;</li>
+						<ul class="cercuri">
+							<li>riboză (în ARN);</li>
+							<li>dezoxiriboză (în ADN).</li>
+						</ul>
+					<li>un radical fosfat.</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- ADN si ARN -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><b><span class="sporange">ADN</span></b> = macromoleculă. Poate fi:
+				<ul class="discuri">
+					<li>bicatenară;</li>
+					<li>complementară (A=T, G=C).</li>
+				</ul>
+
+			</p>
+			<p><b><span class="sporange">ARN </span></b>= moleculă monocatenară. Pate fi:
+				<ul class="discuri">
+					<li><u class="uorange">ARN viral:</u> material genetic la ribovirusuri;</li>
+					<li><u class="uorange">ARN celular:</u> </li>
+						<ul class="cercuri">
+							<li>mesager (ARNm) -copiază informația dintr-o catenă de ADN = TRANSCRIPȚIE;</li>
+							<li>ribozomal (ARNr) - intră în alcătuirea ribozomilor;</li>
+							<li>de transport (ARNt) -transportă aminoacizii la locul sintezei proteice (ribozomi).</li>
+						</ul>
+				</ul>
+				<br><br>
+				<img alt="Oroare" src="../Imagini_materiale/ADN_ARN.png" width="440" style="margin-left: 50px;" >
+			</p>
+		</div>
+	</div>
+
+
+	<!-- stiai ca -->
+
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: darkblue;">
+	      <a style="background-color: lightblue;">
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p>Fiecare celulă are ADN-ul între 2-3 metri și are nevoie de aproximativ 8 ore ca să îl copieze.</p>
+	      </a>
+	    </div>
+    </div>
+
+
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><b><span class="spred">Cromozomii și fusul de diviziune<span></span></b></p>
+				
+			<p>Fiecare specie are un număr caracteristic de cromozomi.</p>
+			<p><u class="ured">Exemplu:</u>
+				<ul class="discuri">
+					<li>omul (2n=46)</li>
+					<li>musculița de oțet (2n=8)</li>
+					<li>ceapa (2n=16)</li>
+					<li>cartoful (2n=48)</li>
+				</ul>
+			</p>
+			<p><u class="ured"> Un organism conține:</u>
+				<ul class="discuri">
+					<li>celule somatice, diploide (2n);</li>
+					<li>celule sexuale, haploide (n).</li>
+				</ul>
+			</p>
+			<p><u class="ured"> Un cromozom metafizic prezintă:</u>
+				<ul class="discuri">
+					<li>două cromatide;</li>
+					<li>centromer - cu ajutorul caruia cromozomii se prind de fibrele fusului de diviziune.</li>
+				</ul>
+			</p>
+			<br><br>
+			<img alt="Oroare" src="../Imagini_materiale/cromozom.png" width="200" style="margin-left: 60px;" >
+			
+		</div>
+	</div>
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><b><span class="spviolet">Diviziunea celulară</span></b> poate fi:
+				<ul class="discuri">
+					<li>DIRECTĂ (AMITOZĂ):</li>
+						<ul class="cercuri">
+							<li>fragmentare (clivare);</li>
+							<li>strangulare (gâtuire).</li>
+						</ul>
+					<li>INDIRECTĂ (CARIOCHINEZA):</li>
+						<ul class="cercuri">
+							<li>MITOZA;</li>
+							<li>MEIOZA.</li>
+						</ul>
+				</ul>
+			</p>
+			<p><b><span class="spviolet">Ciclul celular</span></b> cuprinde două etape:
+				<ul class="numere">
+					<li><u class="uviolet">INTERFAZA:</u></li>
+						<ul class="cercuri">
+							<li>90% din durata ciclului celular;</li>
+							<li> are trei perioade:</li>
+								<ul class="literemici">
+									<li>presintetică (G1):;</li>
+										<ul class="cercuri">
+											<li>are loc sinteza de enzime;</li>
+											<li>cromozomii se decondensează;</li>
+										</ul>
+									<li>de sinteză (S): se dublează cantitatea de ADN și proteine;</li>
+									<li>postsintetică (G2): sinteza unor proteine și ATP.</li>
+								</ul>
+						</ul>
+					<li><u class="uviolet">DIVIZIUNEA PROPRIU-ZISĂ:</u> 10% din durata ciclului nuclear</li>
+						
+				</ul>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- mitoza -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><b><span class="sppink">MITOZA:</span></b>
+				<ul class="discuri">
+					<li>are loc în celulele somatice, diploide (2n);</li>
+					<li>importanță:</li>
+						<ul class="cercuri">
+							<li>asigură creșterea și dezvoltarea organismului;</li>
+							<li>înlocuiește celulele uzate și formează clone.</li>
+						</ul>
+					<li>schema mitozei:</li>
+					<img alt="Oroare" src="../Imagini_materiale/schema_mitozei.png" width="200" style="margin-left: 100px;" >
+				</ul>
+			</p>
+			<p><b><span class="sppink">FAZELE MITOZEI:</span></b></p>
+			<p>&ensp;&ensp; <u class="upink">1. PROFAZA:</u>
+				<ul class="discuri">
+					<li>condensarea cromozomilor, ce devin BRICOMATIDICI;</li>
+					<li>dezorganizarea nucleolilor și a învelisului nuclear;</li>
+					<li>apariția fusului de diviziune;</li>
+					<li>prinderea cromozomilor, prin centromer, de fibrele fusului de diviziune.</li>
+				</ul>
+
+			</p>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- stiai ca -->
+
+
+	<div class="sticky_note">
+		<div class="sticky_note_content" style="background-color: darkred;">
+	      <a style="background-color: orangered;">
+	       	<h2>Știai că !?</h2>
+	       	<br>
+	        <p> Durata vieții unei celule intestinale este de 12 ore. Cea a unei celule a peretelui stomacului este de două zile. O celulă din piele trăiește 4 săptămâni. O celulă nervoasă poate trăi până la 60 de ani.</p>
+	      </a>
+	    </div>
+    </div>
+
+
+	<!-- matafaza -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p>&ensp;&ensp; <u class="upink">2. METAFAZA:</u>
+				<ul class="discuri">
+					<li>cromozomii bicromatidici sunt condensați la maxim;</li>
+					<li>se așează în plan ecuatorial = PLACA METAFAZICĂ;</li>
+					<li>la sfârșitul metafazei începe despărțirea în plan longitudinal  a celor 2 cromatide ale fiecărui cromozom -> cromozomi monocromatidici.</li>
+				</ul>
+
+			</p>
+			<p>&ensp;&ensp; <u class="upink">3. ANAFAZIA:</u>
+				<ul class="discuri">
+					<li>cromozomii monocromatici - atrași simultan spre cei doi poli ai celulei;</li>
+					<li>se formează două plăci anafazice (la jumătatea drumului dintre centru și poli).</li>
+				</ul>
+			</p>
+			<p>&ensp;&ensp; <u class="upink">4. TELOFAZA:</u>
+				<ul class="discuri">
+					<li>cromozomii monocromatidici ajung la polii celulei;</li>
+					<li>se dezorganizează fibrele fusului de diviziune;</li>
+					<li>se decondensează cromozomii;</li>
+					<li>se reorganizează învelisurile nucleare și nucleolii.</li>
+				</ul>
+
+			</p>
+		</div>
+	</div>
+
+
+	
+
+	<!-- meioza -->
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><b><span class="sppink">MEIOZA:</span></b>
+				<ul class="discuri">
+					<li>are loc numai în celulele sexuale (gameți);</li>
+					<li>importanță:</li>
+						<ul class="cercuri">
+							<li>asigură variabilitatea organismelor;</li>
+							<li>menține constant numărul de cromozomi caracteristici fiecărei specii.</li>
+						</ul>
+					<li>schema meiozei:</li>
+					<img alt="Oroare" src="../Imagini_materiale/schema_meiozei.png" width="200" style="margin-left: 100px;" >
+				</ul>
+			</p>
+			<p><b><span class="sppink">FAZELE MEIOZEI:</span></b></p>
+			<p>&ensp;&ensp; <u class="upink">1. MEIOZA I </u> = ETAPA REDUCȚIONALĂ, cuprinde patru faze: </p>
+
+			<p>&ensp;&ensp;&ensp;a. PROFAZA I:</p>
+				<ul class="discuri" style=" text-indent: 20px;">
+					<li>cromozomii de organizează în perechi (unul matern și unul patern)  numiți BIVALENȚI sau tetrade ecromatidice;</li>
+					<li>cromozomii pereche se ating în puncte numite CHEASME, se rup și se realizează un schimb reciproc de gene  = CROSSING-OVER;</li>
+				</ul>
+
+			</p>
+		</div>
+	</div>
+
+
+
+	<div class="paper">
+		<div class="paper_content">
+			<p><ul class="discuri" style=" text-indent: 20px;">
+					<li>apariția fusului de diviziune;</li>
+					<li>prinderea cromozomilor, prin centromer, de fibrele fusului de diviziune.</li>
+			</ul></p>
+			<p>&ensp;&ensp;&ensp;b. METAFAZA I:</p>
+				<ul class="discuri" style=" text-indent: 20px;">
+					<li>cromozomii tetracromatidici se alinează în planul ecuatorial al celulei = placă metafazică.</li>
+				</ul>
+
+			</p>
+			<p>&ensp;&ensp;&ensp;c. ANAFAZA I:</p>
+				<ul class="discuri" style=" text-indent: 20px;">
+					<li>perechile se separă;</li>
+					<li>cromozomii bicromatidici merg spre poli;</li>
+					<li>se amestecă cromozomii materni cu cei paterni, mixare denumită recombinare genetică intercromozomială (dansul lui Müller).</li>
+				</ul>
+			</p>
+			<p>&ensp;&ensp;&ensp;d. TELOFAZA I:</p>
+				<ul class="discuri" style=" text-indent: 20px;">
+					<li>la poli se formează doi nuclei cu număr redus la jumătate (n) de cromozomi bicromatidici.</li>
+				</ul>
+			</p>
+			<p>&ensp;&ensp; <u class="upink">2. MEIOZA II </u> = ETAPA ECVAȚIONALĂ, cuprinde patru faze: 
+				<ul class="discuri">
+					<li>seamănă cu mitoza;</li>
+					<li>prezintă :PROFAZA II, METAFAZA II, ANAFAZA II, TELOFAZA II;</li>
+					<li>la sfârșitul telofazei se formează 4 celule haploide (gameți) care nu se mai divid;</li>
+					<li>în procesul fecundației, din contopirea a două celule haploide (ovul și spermatozoid) -> celula ou (zigot) și astfel se reface numărul constant de cromozomi.</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+
+
+
+</content>
+
+
+<script>
+//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+//navbar end
+
+
+//buton sus start
+//Get the button
+	var upbutton = document.getElementById("upbtn");
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+</script>
+
+
+
+</body>
+</html>

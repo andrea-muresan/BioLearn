@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/teste.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html">Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html" class="active">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+	</div>
+	<!--end topnav-->
+</heder>
+
+<content>
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">TESTE - BAC</h1>
+
+
+	<br><br><br>
+	<form id = "quiz" name = "quiz">
+	  		<h2 style="font-size: 30px;">&ensp;&ensp;&ensp;<u>Virusuri și procariote</u></h2>
+	  		<br><br>
+
+		<p class = "questions">1. Este o caracteristică a virusurilor:</p>
+		<input type = "radio" id = "mc" name = "question1" value ="a">a. prezintă metabolism propriu<br>
+		<input type = "radio" id = "mc" name = "question1" value = "b">b. au genomul viral reprezentat de ADN și ARN  <br>
+		<input type = "radio" id = "mc" name = "question1" value = "c">c. sunt non-patogene<br>
+		<input type = "radio" id = "mc" name = "question1" value = "d">d. prezintă la exterior capsidă <br>
+
+		<br>
+		<p class = "questions">2. Bacteriile:</p>
+
+		<input type = "radio" id = "mc" name = "question2" value = "a">a. aparțin regnului Protista<br>
+		<input type = "radio" id = "mc" name = "question2" value = "b">b. se găsesc doar pe suprafața corpului<br>
+		<input type = "radio" id = "mc" name = "question2" value = "c">c. au nucleotid<br>
+		<input type = "radio" id = "mc" name = "question2" value = "d">d. prezintă mai mulți cromozomi<br>
+
+		<br>
+		<p class = "questions">3. Este  o bacterioză:</p>
+
+		<input type = "radio" id = "mc" name = "question3" value = "a">a. meningita<br>
+		<input type = "radio" id = "mc" name = "question3" value = "b">b. SIDA<br>
+		<input type = "radio" id = "mc" name = "question3" value = "c">c. hepatita B<br>
+		<input type = "radio" id = "mc" name = "question3" value = "d">d. herpesul<br>
+	
+
+		<br>
+		<p class = "questions">4. Cromozomul principal al bacteriilor:</p>
+
+		<input type = "radio" id = "mc" name = "question4" value = "a">a. conține 50 de gene<br>
+		<input type = "radio" id = "mc" name = "question4" value = "b">b. este reprezentat de plasmide<br>
+		<input type = "radio" id = "mc" name = "question4" value = "c">c. prezintă bucle și superrăsuciri secundare<br>
+		<input type = "radio" id = "mc" name = "question4" value = "d">d. are în structura sa doar ADN<br>
+
+		<br>
+		<p class = "questions">5. Bacteriile nu au:</p>
+
+		<input type = "radio" id = "mc" name = "question5" value = "a">a. perete celular<br>
+		<input type = "radio" id = "mc" name = "question5" value = "b">b. membrană<br>
+		<input type = "radio" id = "mc" name = "question5" value = "c">c. ribozomi<br>
+		<input type = "radio" id = "mc" name = "question5" value = "d">d. nucleu<br>
+
+		<br>
+		<p class = "questions">6. Bacteriile ăn formă de bastonaș se numesc:</p>
+
+		<input type = "radio" id = "mc" name = "question6" value = "a">a. coci<br>
+		<input type = "radio" id = "mc" name = "question6" value = "b">b. bacili<br>
+		<input type = "radio" id = "mc" name = "question6" value = "c">c. spirili<br>
+		<input type = "radio" id = "mc" name = "question6" value = "d">d. vibrioni<br>
+
+		<br>
+		<p class = "questions">7. Bacteriile:</p>
+
+		<input type = "radio" id = "mc" name = "question7" value = "a">a. sunt toate patogene<br>
+		<input type = "radio" id = "mc" name = "question7" value = "b">b. se întâlnesc chiar și în ape termale<br>
+		<input type = "radio" id = "mc" name = "question7" value = "c">c. produc boli numite viroze<br>
+		<input type = "radio" id = "mc" name = "question7" value = "d">d. nu se pot înmulți decât în interiorul unui organism pe care îl parazitează<br>
+
+		<br>
+		<p class = "questions">8. Din categoria bacteriilor non-patogene:</p>
+
+		<input type = "radio" id = "mc" name = "question8" value = "a">a. bacteriile fermentative<br>
+		<input type = "radio" id = "mc" name = "question8" value = "b">b. bacilul Koch<br>
+		<input type = "radio" id = "mc" name = "question8" value = "c">c.bacteriile de putrefacție<br>
+		<input type = "radio" id = "mc" name = "question8" value = "d">d. bacteriile fixatoare de azot<br>
+		
+		<br>
+		<p class = "questions">9. Virusul care provoacă cancerul de col uterin:</p>
+
+		<input type = "radio" id = "mc" name = "question9" value = "a">a. VMT<br>
+		<input type = "radio" id = "mc" name = "question9" value = "b">b. HIV<br>
+		<input type = "radio" id = "mc" name = "question9" value = "c">c. HPV<br>
+		<input type = "radio" id = "mc" name = "question9" value = "d">d. HINI<br>
+
+			
+
+		<input id = "button" type = "button" value = "Sunt gata!" onclick = "check();">
+
+
+		<div id = "after_submit">
+			<p id = "number_correct"></p>
+			<p id = "message"></p>
+		</div>
+		
+	</form>
+
+
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+//navbar end
+
+
+//buton sus start
+//Get the button
+	var upbutton = document.getElementById("upbtn");
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+
+
+	//test start
+
+
+	function check(){
+
+		var question1 = document.quiz.question1.value;
+		var question2 = document.quiz.question2.value;
+		var question3 = document.quiz.question3.value;
+		var question4 = document.quiz.question4.value;
+		var question5 = document.quiz.question5.value;
+		var question6 = document.quiz.question6.value;
+		var question7 = document.quiz.question7.value;
+		var question8 = document.quiz.question8.value;
+		var question9 = document.quiz.question9.value;
+		
+		var correct = 0;
+
+
+		if (question1 == "d") {
+			correct++;
+	}
+		if (question2 == "c") {
+			correct++;
+	}	
+		if (question3 == "a") {
+			correct++;
+	}	
+		if (question4 == "c") {
+			correct++;
+	}	
+		if (question5 == "d") {
+			correct++;
+	}	
+		if (question6 == "b") {
+			correct++;
+	}	
+		if (question7 == "b") {
+			correct++;
+	}	
+		if (question8 == "b") {
+			correct++;
+	}	
+		if (question9 == "c") {
+			correct++;
+	}	
+		
+		
+		var messages = ["Super!", "Mai ai puțin...","Nu prea e ok!", "Mai învață!"];
+		var score;
+
+		if (correct < 5) {
+			score = 3;
+		}
+
+		if (correct > 4 && correct < 7) {
+			score = 2;
+		}
+
+		if (correct > 6 && correct < 9) {
+			score = 1;
+		}
+
+		if (correct == 9) {
+			score = 0;
+		}
+
+		document.getElementById("after_submit").style.visibility = "visible";
+		document.getElementById("message").innerHTML = messages[score];
+		document.getElementById("number_correct").innerHTML = "Ai obținut " + correct + " răspunsuri corecte.";
+		
+		}
+	
+
+	//test end
+</script>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*...................................................
+.....................................................
+...................................................*/
+body {
+  font-family:Arial;
+  background-color: #EEE8AA;
+}
+
+/*start navbar*/
+
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #fff556;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+/*end navbar*/
+
+/*buton sus start*/
+#upbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#upbtn:hover {
+  background-color: darkorange;
+}
+
+/*start sticky notes*/
+
+
+ul,li{
+  list-style:none;
+}
+
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background: #9d95ff;
+  display:block;
+  height:11em;
+  width:11em;
+  padding:1.5em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+
+}
+
+ul li{
+  margin:1em;
+  float:left;
+}
+
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size: 17px;
+}
+
+ul li a{
+  transform: rotate(-6deg);
+
+}
+
+ul li:nth-child(even) a{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background: #cfc;
+}
+
+ul li:nth-child(3n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+
+ul li:nth-child(5n) a{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  background: #9d95ff;
+}
+
+ul li:nth-child(7n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: tomato;
+}
+
+ul li:nth-child(11n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: violet;
+}
+
+ul li:nth-child(13n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: lightblue;
+}
+
+ul li:nth-child(17n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: beige;
+}
+
+ul li:nth-child(19n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: bisque;
+}
+
+ul li:nth-child(23n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: cadetblue;
+}
+
+ul li:nth-child(29n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: chocolate;
+}
+
+ul li:nth-child(31n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: coral;
+}
+
+ul li:nth-child(37n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: cyan;
+}
+
+
+ul li:nth-child(41n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: darkgoldenrod;
+}
+
+ul li:nth-child(43n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: darkkhaki;
+}
+
+ul li:nth-child(47n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: darkorange;
+}
+
+ul li:nth-child(51n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: darksalmon;
+}
+
+ul li:nth-child(53n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: darkseagreen;
+}
+
+ul li:nth-child(59n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: gold;
+}
+
+ul li:nth-child(61n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: goldenrod;
+}
+
+
+ul li:nth-child(67n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: greenyellow;
+}
+
+ul li:nth-child(71n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: lightgray;
+}
+
+ul li:nth-child(73n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: khaki;
+}
+
+ul li:nth-child(79n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: lavender;
+}
+
+ul li:nth-child(83n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: moccasin;
+}
+
+ul li:nth-child(89n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: olive;
+}
+
+ul li:nth-child(91n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background: peru;
+}
+
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  z-index:5;
+}
+
+/*end sticky notes*/

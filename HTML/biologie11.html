@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/biologie.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html" >Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+	    </ol>
+	</div>
+	<!--end topnav-->
+</heder>
+
+
+
+
+<content>
+
+
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<!--Cuprins-->
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">Clasa a XI-a</h1>
+
+
+	<div class="paper">
+		<div class="paper_content">
+	  		<h2 >&ensp;&ensp;&ensp;<u>Cuprins</u></h2>
+	  		<br><br>
+	  		<ol class="romane">
+	  			<li><a href="biologie11_1.html"><u>Alcătuirea corpului uman</u></a></li>
+	  			<li><a href="biologie11_2.html"><u>Funcțiile fundamentale ale organismului uman</u></a>
+	  				<ol class="numere">
+	  					<li><a href="">Funcții de relațite</a></li>
+	  						<ol class="discuri" style="margin-left: 30px;">
+	  							<li><a href="">Sistemul nervos</a></li>
+	  							<li><a href="">Analizatorii</a></li>
+	  							<li><a href="">Glandele endocrine</a></li>
+	  							<li><a href="">Mișcarea</a></li>
+	  						</ol>
+	  					<li><a href="">Funcții de nutriție</a></li>
+	  						<ol class="discuri" style="margin-left: 30px;">
+	  							<li><a href="">Digestia și absorbția</a></li>
+	  							<li><a href="">Circulația</a></li>
+	  							<li><a href="">Respirația</a></li>
+	  							<li><a href="">Excreția</a></li>
+	  							<li><a href="">Metabolismul</a></li>
+	  						</ol>
+	  					<li><a href="">Funcția de reproducere</a></li>
+	  					<li><a href="">Organismul-Un tot unitar</a></li>
+	  				</ol>
+	  			</li>
+	  		</ol>
+		</div>
+	</div>
+
+
+	
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	//navbar end
+
+	//buton sus start
+	//Get the button
+	var upbutton = document.getElementById("upbtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+</script>
+
+
+
+</body>
+</html>
