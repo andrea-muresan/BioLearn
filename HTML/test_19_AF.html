@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/teste.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html">Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html" class="active">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+		<a href="hangman.html">Joc<i class="fa fa-gamepad" style="float: right; margin-left: 5px;"></i></a>
+	</div>
+	<!--end topnav-->
+</heder>
+
+<content>
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">TESTE - BAC</h1>
+
+
+	<br><br><br>
+	<form id = "quiz" name = "quiz">
+		<div class="paper">
+			<div class="paper_content">
+		  		<h2 style="font-size: 30px;">&ensp;&ensp;&ensp;<u>Testul 19</u></h2>
+		  		<br><br>
+
+				<p class = "questions">1. Lanțul de oscioare se află în urechea internă.</p>
+
+				<input type = "radio" id = "mc" name = "question1" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question1" value = "F">Fals <br>
+
+				<br>
+				<p class = "questions">2. Venele cave se deschid în ventriculul drept.</p>
+				
+				<input type = "radio" id = "mc" name = "question2" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question2" value = "F">Fals <br>
+
+
+				<br>
+				<p class = "questions">3. Ferigile se țnmulțesc prin spori.</p>
+				
+				<input type = "radio" id = "mc" name = "question3" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question3" value = "F">Fals <br>
+
+			
+
+				<br>
+				<p class = "questions">4. Scheletul liliaculuieste format din oase groase.</p>
+				
+				<input type = "radio" id = "mc" name = "question4" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question4" value = "F">Fals <br>
+
+				<br>
+				<p class = "questions">5. Mitocondriile prezintă sistem tilacoidal.</p>
+				
+				<input type = "radio" id = "mc" name = "question5" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question5" value = "F">Fals <br>
+			</div>
+		</div>
+		<div class="paper">
+			<div class="paper_content">
+
+				<br>
+				<p class = "questions">6. Fecundația, la mamifere, are loc în trompele uterine.</p>
+				
+				<input type = "radio" id = "mc" name = "question6" value ="A">Adevărat<br>
+				<input type = "radio" id = "mc" name = "question6" value = "F">Fals <br>
+				
+
+					
+
+				<input id = "button" type = "button" value = "Sunt gata!" onclick = "check();">
+
+
+				<div id = "after_submit">
+					<p id = "number_correct"></p>
+					<p id = "message"></p>
+				</div>
+			</div>
+		</div>
+		
+	</form>
+
+
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+//navbar end
+
+
+//buton sus start
+//Get the button
+	var upbutton = document.getElementById("upbtn");
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+
+
+	//test start
+
+
+	function check(){
+
+		var question1 = document.quiz.question1.value;
+		var question2 = document.quiz.question2.value;
+		var question3 = document.quiz.question3.value;
+		var question4 = document.quiz.question4.value;
+		var question5 = document.quiz.question5.value;
+		var question6 = document.quiz.question6.value;
+		
+		var correct = 0;
+
+
+		if (question1 == "F") {
+			correct++;
+	}
+		if (question2 == "F") {
+			correct++;
+	}	
+		if (question3 == "A") {
+			correct++;
+	}	
+		if (question4 == "F") {
+			correct++;
+	}	
+		if (question5 == "F") {
+			correct++;
+	}	
+		if (question6 == "A") {
+			correct++;
+	}	
+		
+		
+		var messages = ["Super!", "E ok!", "Mai învață!"];
+		var score;
+
+		if (correct < 4) {
+			score = 2;
+		}
+
+		if (correct >3 && correct  < 6) {
+			score = 1;
+		}
+
+
+		if (correct == 6) {
+			score = 0;
+		}
+
+		document.getElementById("after_submit").style.visibility = "visible";
+		document.getElementById("message").innerHTML = messages[score];
+		document.getElementById("number_correct").innerHTML = "Ai obținut " + correct + " răspunsuri corecte. Răspunsuri: 1-F, 2-F, 3-A, 4-F, 5-F, 6-A;	"	
+	}
+	
+
+	//test end
+</script>
+
+</body>
+</html>

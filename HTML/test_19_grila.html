@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioLearn</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/teste.css">
+	<!--Icons link-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+</head>
+<body>
+
+<heder>
+	<!--start topnav-->
+	<div class="topnav" id="myTopnav">
+		<!--Acasa-->
+		<a href="index.html" >Acasă</a>
+		<a href="materiale.html">Materiale <i class="fas fa-microscope" style="float: right; margin-left: 5px;"></i></a>
+		<a href="teste.html" class="active">Teste <i class="fas fa-clipboard-check" style="float: right; margin-left: 5px;"></i></a>
+		<a href="stiai_ca.html">Știai că!? <i class="fas fa-fire" style="float: right; margin-left: 5px;"></i></a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="deschide_lista()">&#9776;</a>
+		<a href="hangman.html">Joc<i class="fa fa-gamepad" style="float: right; margin-left: 5px;"></i></a>
+	</div>
+	<!--end topnav-->
+</heder>
+
+<content>
+	<!-- buton sus -->
+	<button onclick="topFunction()" id="upbtn">Mergi sus</button>
+
+	<br><br>
+	<h1 style="text-align: center; font-size:50px;">TESTE - BAC</h1>
+
+
+	<br><br><br>
+	<form id = "quiz" name = "quiz">
+		<div class="paper">
+			<div class="paper_content">
+		  		<h2 style="font-size: 30px;">&ensp;&ensp;&ensp;<u>Testul 19</u></h2>
+		  		<br><br>
+
+				<p class = "questions">1. Parameciul aparține regnului:</p>
+
+				<input type = "radio" id = "mc" name = "question1" value ="a">a. animal<br>
+				<input type = "radio" id = "mc" name = "question1" value = "b">b. fungi<br>
+				<input type = "radio" id = "mc" name = "question1" value = "c">c. monera<br>
+				<input type = "radio" id = "mc" name = "question1" value = "d">d. protiste<br>
+
+				<br>
+				<p class = "questions">2. Fecundația la angiosperme:</p>
+				
+				<input type = "radio" id = "mc" name = "question2" value ="a">a. este simplă<br>
+				<input type = "radio" id = "mc" name = "question2" value = "b">b. asigură înmulțirea asexuată<br>
+				<input type = "radio" id = "mc" name = "question2" value = "c">c. constă în trecerea polenului pe stigmat<br>
+				<input type = "radio" id = "mc" name = "question2" value = "d">d. constă în contopirea unei spermatii oosfera<br>
+
+
+				<br>
+				<p class = "questions">3. Este plantă dicotiledonată:</p>
+				
+				<input type = "radio" id = "mc" name = "question3" value ="a">a. porumbul<br>
+				<input type = "radio" id = "mc" name = "question3" value = "b">b. usturoiul<br>
+				<input type = "radio" id = "mc" name = "question3" value = "c">c. trandafirul<br>
+				<input type = "radio" id = "mc" name = "question3" value = "d">d. laleaua<br>
+			</div>
+		</div>
+		<div class="paper">
+			<div class="paper_content">
+				<br>
+				<p class = "questions">4. Digestia și absorbția nutrimentelor se realizează la nivelul sistemului:</p>
+				
+				<input type = "radio" id = "mc" name = "question4" value ="a">a. circulator<br>
+				<input type = "radio" id = "mc" name = "question4" value = "b">b. digestiv<br>
+				<input type = "radio" id = "mc" name = "question4" value = "c">c. excretor<br>
+				<input type = "radio" id = "mc" name = "question4" value = "d">d. respirator<br>
+
+				<br>
+				<p class = "questions">5. Pancreasul la mamifere:</p>
+				
+				<input type = "radio" id = "mc" name = "question5" value ="a">a. este localizat în dreapta<br>
+				<input type = "radio" id = "mc" name = "question5" value = "b">b. este localizat în cavitatea toracică<br>
+				<input type = "radio" id = "mc" name = "question5" value = "c">c. este localizat sub stomac<br>
+				<input type = "radio" id = "mc" name = "question5" value = "d">d. este o componentă a tubului digestiv<br>
+
+					
+
+				<input id = "button" type = "button" value = "Sunt gata!" onclick = "check();">
+
+
+				<div id = "after_submit">
+					<p id = "number_correct"></p>
+					<p id = "message"></p>
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+</content>
+
+
+<script>
+	//navbar start
+	function deschide_lista() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+//navbar end
+
+
+//buton sus start
+//Get the button
+	var upbutton = document.getElementById("upbtn");
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    upbutton.style.display = "block";
+	  } else {
+	    upbutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	//buton sus end
+
+
+	//test start
+
+
+	function check(){
+
+		var question1 = document.quiz.question1.value;
+		var question2 = document.quiz.question2.value;
+		var question3 = document.quiz.question3.value;
+		var question4 = document.quiz.question4.value;
+		var question5 = document.quiz.question5.value;
+		
+		var correct = 0;
+
+
+		if (question1 == "d") {
+			correct++;
+	}
+		if (question2 == "d") {
+			correct++;
+	}	
+		if (question3 == "c") {
+			correct++;
+	}	
+		if (question4 == "b") {
+			correct++;
+	}	
+		if (question5 == "c") {
+			correct++;
+	}	
+		
+		
+		var messages = ["Super!", "E ok!", "Mai învață!"];
+		var score;
+
+		if (correct < 3) {
+			score = 2;
+		}
+
+		if (correct >2 && correct  < 5) {
+			score = 1;
+		}
+
+
+		if (correct == 5) {
+			score = 0;
+		}
+
+		document.getElementById("after_submit").style.visibility = "visible";
+		document.getElementById("message").innerHTML = messages[score];
+		document.getElementById("number_correct").innerHTML = "Ai obținut " + correct + " răspunsuri corecte. Răspunsuri: 1-d, 2-d, 3-c, 4-b, 5-c";
+		}
+
+	//test end
+</script>
+
+</body>
+</html>
